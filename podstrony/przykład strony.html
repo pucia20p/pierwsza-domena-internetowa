@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"> <!-- zakres znaków -->
+        <meta name="keywords" content="fnaf, five nights at Freddy's, Freddy"> <!--słowa kluczowe do wyszukiwania-->
+        <meta name="description" content="strona poświęcona serii gier Five Nights at Freddy's (strona to projekt do szkoły, raczej nie ma tu interesującej treści :D) "><!--opis strony--> 
+        <meta name="author" content="Piotr Pucia"> <!--Lel autor -->
+        <meta name="robots" content="all"> <!-- index, follow, noindex, nofollow, none, all (co mają robić roboty google'a)-->
+        <link rel="shortcut icon" href="/img/freddy.png">
+        <link rel="stylesheet" href="/style.css">
+        
+
+        <title>FFS przykład</title>
+        
+    </head>
+    <body>
+
+        <header>
+            <h3 class="zegar">godzina</h3>
+            <h1 id="naglowek">FNaF FAN SITE</h1> 
+        </header>
+
+        <nav class="navtop">
+            <ul class="jeden">
+            <li>
+                <a href="/index.html">start</a>
+            </li>
+            <li>
+                <a href="/podstrony/lista.html">strony powiązane</a>
+            </li>
+            <li>
+                <a href="/podstrony/menuzadania.html">zadania</a>
+            </li>
+            <li>
+                <a href="/podstrony/galeria.html">galeria</a>
+            </li>
+            <li>
+                <a href="#">ważne linki</a>
+                <ul>
+                    <li>
+                        <a href="http://scottgames.com">scottgames.com</a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/dQw4w9WgXcQ">projekt dQw4</a>
+                    </li>
+                    <li>
+                        <a href="/podstrony/projektJS.html">Projekt JavaScript</a>
+                    </li>
+                </ul>
+            <li>
+                <a href="/podstrony/formularz.html">kontakt</a>
+            </li>
+            </li>
+        </ul>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <footer>
+            <address class="navbottom">
+                <a href="mailto:puciap@hotmail.com" style="color: white;">Kontakt ze mną</a>
+            </address>
+        </footer>
+
+        <script type="text/javascript">
+            
+            function navmenu(x){
+                location.href=x;
+            }
+            function czas(){
+                let x = new Date()
+                let min = x.getMinutes()
+                //String(min)
+                let h = x.getHours()
+                //String(h)
+                //if(min.length==3){
+                //    min = '0' + min
+                //}
+                let content = h+':'+min
+                
+                document.getElementsByClassName('zegar')[0].innerHTML=content
+                setTimeout('czas()',10000)
+            }
+
+            let y=Math.round(Math.random()*100)
+            if(y==69)
+                alert("nice")
+
+            czas()
+
+
+        </script>
+    </body>
+</html>

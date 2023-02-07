@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"> <!-- zakres znaków -->
+        <meta name="keywords" content="fnaf, five nights at Freddy's, Freddy"> <!--słowa kluczowe do wyszukiwania-->
+        <meta name="description" content="strona poświęcona serii gier Five Nights at Freddy's (strona to projekt do szkoły, raczej nie ma tu interesującej treści :D) "><!--opis strony--> 
+        <meta name="author" content="Piotr Pucia"> <!--Lel autor -->
+        <meta name="robots" content="all"> <!-- index, follow, noindex, nofollow, none, all (co mają robić roboty google'a)-->
+        <link rel="shortcut icon" href="/img/freddy.png">
+        <link rel="stylesheet" href="/style.css">
+    
+        <link rel="stylesheet" type="text/css" href="projektJS.css">
+
+        
+
+        <title>FFS JavaScript zdarzenia</title>
+        
+    </head>
+    <body onresize="resizebody()">
+        
+        <header>
+            <h3 class="zegar">godzina</h3>
+            <h1 id="naglowek">FNaF FAN SITE</h1> 
+        </header>
+
+        <nav class="navtop">
+          <ul class="jeden">
+            <li>
+                <a href="/index.html">start</a>
+            </li>
+            <li>
+                <a href="/podstrony/lista.html">strony powiązane</a>
+            </li>
+            <li>
+                <a href="/podstrony/menuzadania.html">zadania</a>
+            </li>
+            <li>
+                <a href="/podstrony/galeria.html">galeria</a>
+            </li>
+            <li>
+                <a href="#">ważne linki</a>
+                <ul>
+                    <li>
+                        <a href="http://scottgames.com">scottgames.com</a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/dQw4w9WgXcQ">projekt dQw4</a>
+                    </li>
+                    <li>
+                        <a href="/podstrony/projektJS.html">Projekt JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/podstrony/formularz.html">kontakt</a>
+            </li>
+        </ul>
+        </nav>
+
+
+
+
+
+        
+
+        <div class="urmom">
+        <main>
+        	<table border="0">
+
+        		<tr id="pierwsze">
+        			<th class="niejeden"> Nazwa nasłuchiwania: </th>
+                    <th rowspan="21" id="krecha"></th>
+        			<th class="dwa"> Kod: </th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('abort')" id="1abort">abort</button></th>
+        			<th rowspan="2"><h2 id="tytul">Tytuł</h2></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('blur')" id="1blur"> blur </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('change')" id="1change"> change </button></th>
+                    <th rowspan="3"><p id="opis" class="lewo">Opis</p></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('click')" id="1click"> click </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('dblclick')" id="1dblclick"> dbclick </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('error')" id="1error"> error </button></th>
+                    <th rowspan="222"><div id="kod">przykład</div></th>        		
+                </tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('focus')" id="1focus"> focus </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('keydown')" id="1keydown"> keydown </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('keypress')" id="1keypress"> keypress </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('keyup')" id="1keyup"> keyup </button> </th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('mousedown')" id="1mousedown"> mousedown </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('mousemove')"  id="1mousemove"> mousemove </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('mouseout')" id="1mouseout"> mouseout </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('mouseover')" id="1mouseover"> mouseover </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('mouseup')" id="1mouseup"> mouseup </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('reset')" id="1reset"> reset </button></th>
+        		</tr>
+
+        		<tr>
+        			<th> <button type="button" onclick="click123('resize')" id="1resize"> resize </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('select')" id="1select"> select </button></th>
+        		</tr>
+
+        		<tr>
+        			<th><button type="button" onclick="click123('submit')" id="1submit"> submit </button></th>
+        		</tr>
+				
+        	</table>
+        </main>
+    	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <footer>
+            <address class="navbottom">
+                <a href="mailto:puciap@hotmail.com" style="color: white;">Kontakt ze mną</a>
+            </address>
+        </footer>
+
+        <script type="text/javascript">
+
+            let test=0;
+            let switcher = true
+            function prezentacjabutton(){
+                if(switcher==true){
+                    document.getElementById("test1").style.background="green"
+                    switcher = false
+                } else {
+                    document.getElementById("test1").style.background="blue"
+                    switcher = true
+                }
+            }
+            function prezentacjainput(){
+                document.getElementById("test2a").innerHTML=document.getElementById("test2").value
+            }
+            function prezentacjaerror(){
+                document.getElementById("oyoy").innerHTML="Zdjęcie się zepsuło :C"
+            }
+            function prezentacjaerror2(){
+                document.getElementById("test3").src="123456"
+            }
+            function prezentacjareset(){
+                document.getElementById("formu").style.background="green"
+            }
+            function prezentacjaresize(){
+                document.getElementById("frames").style.background="green"
+            }
+            let lmao = false
+            function resizebody(){
+                if(lmao == true)
+                    document.getElementById("test6").style.background="green"
+            }
+
+            let owo1 = "1abort"
+            function clearer(owo){
+                lmao = false
+                document.getElementById(owo1).style.background="#A12913"
+                owo1=owo
+                document.getElementById(owo).style.background="green"
+            }
+            let przelacznik = 0
+
+
+            function click12(numerek){
+                switch(numerek){
+                    case -1:
+                        przelacznik++
+                        break;
+
+                    case 0:
+                        przelacznik++
+                        break;
+
+                    case 1:
+                        click123("abort")
+                        break;
+
+                    case 2:
+                        click123("blur")
+                        break;
+
+                    case 3:
+                        click123("change")
+                        break;
+
+                    case 4:
+                        click123("click")
+                        break;
+
+                    case 5:
+                        click123("dblclick")
+                        break;
+
+                    case 6:
+                        click123("error")
+                        break;
+
+                    case 7:
+                        click123("focus")
+                        break;
+
+                    case 8:
+                        click123("keydown")
+                        break;
+
+                    case 9:
+                        click123("keypress")
+                        break;
+
+                    case 10:
+                        click123("keyup")
+                        break;
+
+                    case 11:
+                        click123("mousedown")
+                        break;
+
+                    case 12:
+                        click123("mousemove")
+                        break;
+
+                    case 13:
+                        click123("mouseout")
+                        break;
+
+                    case 14:
+                        click123("mouseover")
+                        break;
+
+                    case 15:
+                        click123("mouseup")
+                        break;
+
+                    case 16:
+                        click123("reset")
+                        break;
+
+                    case 17:
+                        click123("resize")
+                        break;
+
+                    case 18:
+                        click123("select")
+                        break;
+
+                    case 19:
+                        click123("submit")
+                        break;
+
+                    case 20:
+                        przelacznik--
+                        break;
+
+                    default:
+                        console.log("co?")
+                        break;
+                }
+            }
+
+        	function click123(nazwa){
+                clearer(1+nazwa)
+            	switch(nazwa){
+
+            		case "abort":
+                        przelacznik=1
+            			document.getElementById("tytul").innerHTML="Abort"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy zostanie przerwane ładowanie obrazu.<br>Obsługuje element img."
+                        document.getElementById("kod").innerHTML="Ojojoj, nie dam rady zaprezentować, po prostu uwierz opisowi."
+            			break;
+
+                    case "blur":
+                        przelacznik=2
+                        document.getElementById("tytul").innerHTML="Blur"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy element traci fokus.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<button type='button' id='test1' onblur='prezentacjabutton()'>Strać mój focus!</button>"
+                        break;
+
+                    case "change":
+                        przelacznik=3
+                        document.getElementById("tytul").innerHTML="Change"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy element traci fokus<br>i jednocześnie zmienia się wartość zawarta w tym elemencie (np. polu tekstowym).<br>Obsługuje elementy input, select, textarea."
+                        document.getElementById("kod").innerHTML="<input type='text' id='test2' onchange='prezentacjainput()'><p>Napisałeś: <p id='test2a'></p></p>"
+                        break;
+
+                    case "click":
+                        przelacznik=4
+                        document.getElementById("tytul").innerHTML="Click"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy element został kliknięty.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<button type='button' id='test1' onclick='prezentacjabutton()'>Kliknij mnie!</button>"
+                        break;
+
+                    case "dblclick":
+                        przelacznik=5
+                        document.getElementById("tytul").innerHTML="DblClick"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy element został dwukrotnie kliknięty.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<button type='button' id='test1' ondblclick='prezentacjabutton()'>Kliknij mnie dwa razy!</button>"
+                        break;
+
+                    case "error":
+                        przelacznik=6
+                        document.getElementById("tytul").innerHTML="Error"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy w trakcie ładowanie obrazu wystąpi błąd.<br>Obsługuje element img."
+                        document.getElementById("kod").innerHTML="<img id='test3' src='https://comparic.xyz/uploads/2017/12/reklama1.jpg' onerror='prezentacjaerror()'><p id='oyoy'></p><button type='button' id='test1' onclick='prezentacjaerror2()'>Naciśnij tutaj aby zepsuć zdjęcie!</button>"
+                        break;
+
+                    case "focus":
+                        przelacznik=7
+                        document.getElementById("tytul").innerHTML="Focus"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy element otrzymuje fokus.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<button type='button' id='test1' onfocus='prezentacjabutton()'>Zrób mi focus!</button>"
+                        break;
+
+                    case "keydown":
+                        przelacznik=8
+                        document.getElementById("tytul").innerHTML="KeyDown"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy naciśnięty zostanie klawisz klawiatury.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<p>Polecam nacisnąć strzałkę w górę/dół :P</p>"
+                        break;
+
+                    case "keypress":
+                        przelacznik=9
+                        document.getElementById("tytul").innerHTML="KeyPress"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy klawisz klawiatury zostaje naciśnięty i puszczony.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1'>Wejdź w pole tekstowe, naciśnij i puść klawisz!<input type='text' onkeypress='prezentacjabutton()'></input></div>"
+                        break;
+
+                    case "keyup":
+                        przelacznik=10
+                        document.getElementById("tytul").innerHTML="KeyUp"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy puszczony zostanie klawisz klawiatury.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1'>Wejdź w pole tekstowe i puść klawisz! <input type='text' onkeyup='prezentacjabutton()'></input></div>"
+                        break;
+
+                    case "mousedown":
+                        przelacznik=11
+                        document.getElementById("tytul").innerHTML="MouseDown"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy klawisz myszy zostanie naciśnięty nad elementem.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1' onmousedown='prezentacjabutton()'>Kliknij nade  mną!</div>"
+                        break;
+
+                    case "mousemove":
+                        przelacznik=12
+                        document.getElementById("tytul").innerHTML="MouseMove"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy kursor myszy jest przesuwany nad elementem.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1' onmousemove='prezentacjabutton()'>Przejedź kursorem nade  mną!</div>"
+                        break;
+
+                    case "mouseout":
+                        przelacznik=13
+                        document.getElementById("tytul").innerHTML="MouseOut"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy kutsor myszy opuści obszar elementu.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1' onmouseout='prezentacjabutton()'>Zdejmij ze mnie kursor!</div>"
+                        break;
+
+                    case "mouseover":
+                    przelacznik=14
+                        document.getElementById("tytul").innerHTML="MouseOver"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy kursor wejdzie w obszar elementu.<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1' onmouseover='prezentacjabutton()'>Wejdź w mój obszar :lennyface:</div>"
+                        break;
+
+                    case "mouseup":
+                        przelacznik=15
+                        document.getElementById("tytul").innerHTML="MouseUp"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, kiedy klawisz myszy zostanie zwolniony nad elementem<br>Obsługuje większość elementów strony."
+                        document.getElementById("kod").innerHTML="<div id='test1' onmouseup='prezentacjabutton()'>Zwolnij ze mnie przycisk myszki!</div>"
+                        break;
+
+                    case "reset":
+                        przelacznik=16
+                        document.getElementById("tytul").innerHTML="Reset"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje podczas resetowania (wywołanie w kodzie metody reset,<br>kliknięcie przycisku reset) formularza.<br>Obsługuje element form."
+                        document.getElementById("kod").innerHTML="<form id='formu'  onreset='prezentacjareset()'><input type='reset' style='margin-top: 40px;'></form>"
+                        break;
+
+                    case "resize":
+                        lmao = true
+                        przelacznik=17
+                        document.getElementById("tytul").innerHTML="Resize"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje, gdy zmieni się rozmiar okna.<br>Obsługuje elementy body i iframe."
+                        document.getElementById("kod").innerHTML="<div id='test6'>Zmień rozmiar okna!</div>"
+                        break;
+
+                    case "select":
+                        przelacznik=18
+                        document.getElementById("tytul").innerHTML="Select"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje podczas zaznaczania fragmentu tekstu.<br>Obsługuje element input (text, textarea)."
+                        document.getElementById("kod").innerHTML="<input type='text' onselect='prezentacjabutton()' id='test1'>"
+                        break;
+
+                    case "submit":
+                        przelacznik=19
+                        document.getElementById("tytul").innerHTML="Submit"
+                        document.getElementById("opis").innerHTML="Zdarzenie, które powstaje podczas wysyłania (wywołanie w kodzie metody submit,<br>kliknięcie przycisku submit) formularza.<br>Obsługuje element form."
+                        document.getElementById("kod").innerHTML="<form id='formu'  onsubmit='prezentacjareset()'><input type='submit' style='margin-top: 40px;'></form>"
+                        break;
+            	}
+            }
+
+            document.addEventListener("keydown", e=>{
+                console.log(e.code)
+                switch(e.code){
+
+                    case "ArrowUp":
+                        przelacznik--
+                        click12(przelacznik)
+                        break;
+
+                    case "ArrowDown":
+                        przelacznik++
+                        click12(przelacznik)
+                        break;
+                }
+            })
+
+            // --------------------------------------------------------------------------
+
+            
+            function navmenu(x){
+                location.href=x;
+            }
+            function czas(){
+                let x = new Date()
+                let min = x.getMinutes()
+                //String(min)
+                let h = x.getHours()
+                //String(h)
+                //if(min.length==3){
+                //    min = '0' + min
+                //}
+                let content = h+':'+min
+                
+                document.getElementsByClassName('zegar')[0].innerHTML=content
+                setTimeout('czas()',10000)
+            }
+
+            let y=Math.round(Math.random()*100)
+            if(y==69)
+                alert("nice")
+
+            czas()
+            
+
+            // --------------------------------------------------------------------------
+
+            
+
+
+        </script>
+    </body>
+</html>

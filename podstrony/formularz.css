@@ -1,0 +1,21 @@
+            .glowne{
+                width: 600px;
+                background-color: rgba(36,36,36,0.7);
+                margin: 90px 30px;                
+            }
+
+            input[type=submit]{
+                background-color:white;
+                color:black;
+                border-radius: 125px;
+                width: 200px;
+                padding: 3px;
+            }
+            
+            input[type=reset]{
+                background-color:white;
+                color:black;
+                border-radius: 125px;
+                width: 200px;
+                padding: 3px;
+            }

@@ -1,0 +1,173 @@
+#powrotglowna{
+    font-size: 30px;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+	background-color: #f4f4f4;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+header{
+	background-color: #fff;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+	position: fixed;
+	width: 100%;
+	z-index: 10; /* nr warstwy*/
+	top:0;
+}
+
+header ul{
+	list-style-type: none;
+	background-color: #fff;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+header li a{
+	padding: 20px;
+	display: block;
+	border-right: 1px solid #f4f4f4;
+}
+
+header li a:hover{
+	background-color: #f4f4f4;
+}
+
+header .menu{
+	clear: both;
+	max-height: 0;
+}
+
+header .menu-btn:checked ~ .menu{
+	max-height: 300px;
+
+}
+
+
+header .logo{
+	display: block;
+	float: left;
+	padding: 10px 20px;
+	font-size: 2em;
+}
+header .menu-icon{
+	cursor: pointer;
+	float: right;
+	padding: 30px 20px;
+	position: relative;
+}
+header .menu-icon .navicon{
+	background-color: #00ff08;
+	display: block;
+	height: 2px;
+	width: 18px;
+	position: relative;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon{
+	background-color: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon::before{
+	transform: rotate(45deg) translateY(-7.4px);
+}
+header .menu-btn:checked ~ .menu-icon .navicon::after{
+	transform: rotate(-45deg) translateY(6.7px);
+}
+
+header .menu-icon .navicon::before, header .menu-icon .navicon::after{
+	background-color: #00ff08;
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+header .menu-icon .navicon::before{
+	top: 5px;
+}
+header .menu-icon .navicon::after{
+	top: -5px;
+}
+header .menu-btn{
+	display: none;
+}
+
+
+@media(min-width: 600px){
+	header li{
+		float: left;
+	}
+
+	header .menu{
+		float: right;
+		clear: none;
+		max-height: none;
+	}
+	header .menu-icon{
+		display: none;
+	}
+}
+
+
+/* uWu */
+.element{
+	width: 100px;
+	height: 100px;
+	background-color: #2bff00;
+	margin: 100px;
+	
+	
+
+
+	transform: scale(5);
+		scaleX(3);
+		scaleY(3);
+
+	transform: skewX(10deg);
+	transform: skewY(10deg);
+	:skew(10deg, 20deg);
+
+	transform: translate(-100px, -200px);
+
+	transform: rotate(50deg);
+
+
+	:checked;
+
+
+/*
+	transform: matrix();
+	transform: perspective(); /*  check it out! */
+
+
+
+/*
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+		:linear;
+		:ease-in;
+		:ease-out;
+		:ease-in-out;
+
+		:step-start;
+		:step-end;
+		:steps; 
+	transition-delay: 0.5s;
+
+	transition: background .1s ease-out 0.5s;
+	-webkit-transition: background .1s ease-out 0.5s;
+	-moz-tr	ansition: background .1s ease-out 0.5s;
+*/
+}
+.element:hover{
+	background-color: #ABCDEF;
+}

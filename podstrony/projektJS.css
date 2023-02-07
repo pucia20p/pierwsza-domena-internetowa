@@ -1,0 +1,90 @@
+            :root{
+                 --main-color: black;
+                --second-color: #A12913;
+                --third-color: rgba(36,36,36,0.7);
+                --fourth-color: #fff;
+            }
+            main{
+        		text-align: center;
+                font-family: Century Gothic;
+        	}
+        	table{
+        		display: inline;
+        	}
+        	.niejeden{
+        		width: 100px;
+        	}
+        	.dwa{
+        		width: 800px;
+        	}
+        	.id th{
+        		height: 50px;
+        	}
+        	th button{
+        		border: 2px;
+			    border-radius: 5px;
+			    font-size: 20px;
+			    background-color: var(--second-color);
+			    color: white;
+        	}
+            .lewo{
+                text-align: initial;
+                margin-left: 25px;
+            }
+            #krecha{
+                width: 1px;
+                height: 700px;
+                background-color: rgba(255,255,255,0.5);
+                margin-top: 0;
+            }
+            #pierwsze th{
+                margin: 0 100px;
+            }
+            #test1{
+                min-height: 50px;
+                min-width: 100px;
+            }
+            #formu{
+                min-width: 200px;
+                min-height: 100px;
+                background-color: var(--second-color);
+            }
+            #frames{
+                min-width: 200px;
+                min-height: 200px;
+                background-color: #A12913;
+                resize: all;
+            }
+            #test6{
+                min-height: 50px;
+                min-width: 100px;
+            }
+            #kod div{
+                border: 2px;
+                border-radius: 5px;
+                font-size: 20px;
+                background-color: var(--second-color);
+                color: white;
+                max-width: 200px;
+                color: black;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 25px;
+                padding-top: 25px;
+                margin-left: 40px;
+            }
+            #kod form{
+                border: 2px;
+                border-radius: 5px;
+                font-size: 20px;
+                background-color: var(--second-color);
+                color: white;
+                max-width: 200px;
+                color: black;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+                margin-left: 40px;
+            }

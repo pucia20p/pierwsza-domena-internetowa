@@ -1,0 +1,29 @@
+            table{
+              border-collapse: separate; 
+              width: 100px;
+              padding:10px;
+              border-spacing: 1px;
+              margin: 10px auto;
+              height: 750px;
+            }
+            .pkt:hover .pkt2{
+                color:#A12913;
+                background-color: rgba(55,25,20,0.6);
+            }
+            .pkt2{
+                color:black;
+                background-color:white;
+            }
+            .pkt:hover{
+                color:rgba(185,200,210,0.8);
+                background-color:rgba(70,55,45,0.8);
+            }
+
+            .pkt{
+                color:white;
+                background-color:black;
+            }
+            th a{
+                color:#A12913;
+                font-family: Comic Sans MS;
+            }

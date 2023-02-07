@@ -1,0 +1,215 @@
+:root{
+    --main-color: #000;
+    --second-color: #A12913;
+    --third-color: rgba(36,36,36,0.7);
+    --fourth-color: #fff;
+
+}
+
+body{
+    background-image: url("/img/cn.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--main-color);
+    color: white;
+    margin: 0;
+    font-family: Century Gothic;
+}
+.navtop{
+    border-top: 1px solid var(--second-color);
+    background-color: var(--third-color);
+    min-height: 50px;
+    text-align: center;
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50px;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+#naglowek{
+    margin: 0px 0px;
+    font-size: 45px;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 50px;
+}
+.zegar{
+    margin: 0px 10px;
+    position: absolute;
+    right: 0;
+    background-color: var(--main-color);
+}
+.navbottom{
+    border-top: 2px solid var(--fourth-color);
+    background-color: var(--main-color);
+    height: 40px;
+    color: var(--fourth-color);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+main{
+    min-width: 600px;
+    background-color: var(--third-color);
+    margin: 90px 30px;
+    min-height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.txt{
+    margin: 30px;
+    margin-top: 30px;
+}
+
+
+a{
+    color: white;
+}
+
+.navtop{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.jeden{
+    display: flex;
+    justify-content: center;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    margin-top: 21px;
+}
+.jeden li{
+    background-color: none;
+    width: 200px;
+    list-style-type: none;
+    border: 1px solid var(--second-color);
+}
+.jeden li:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+.jeden li a{
+    padding: 4px;
+    display: block;
+    text-decoration: none;
+}
+.jeden li  li{
+    background-color: rgba(0,0,0,0.2);
+}
+.jeden li  li:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.jeden li  ul{
+    display: none;
+    
+}
+.jeden li:hover  ul{
+    display: block;
+    position: absolute;
+    width: 175px;
+    
+    padding: 0;
+}
+
+
+/*
+#A12913 red
+rgba(55,25,20,0.6)      bardziej szary
+rgba(185,200,210,0.8)    jakiś szary
+rgba(70,55,45,0.8) bronzowy
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+.navtop{
+    clear: both;
+    max-height: 0;
+    display: none;
+
+}
+
+.menu-btn:checked ~ .navtop{
+    max-height: 300px;
+    display: block;
+}
+
+
+
+.menu-icon{
+    cursor: pointer;
+    float: right;
+    padding: 30px 20px;
+    position: relative;
+}
+.menu-icon .navicon{
+    background-color: var(--second-color);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+}
+
+.menu-btn:checked ~ .menu-icon{
+    background-color: transparent;
+    display: none;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon::before{
+    transform: rotate(45deg) translateY(-7.4px);
+}
+.menu-btn:checked ~ .menu-icon .navicon::after{
+    transform: rotate(-45deg) translateY(6.7px);
+}
+
+.menu-icon .navicon::before, .menu-icon .navicon::after{
+    background-color: var(--second-color);
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.menu-icon .navicon::before{
+    top: 5px;
+}
+.menu-icon .navicon::after{
+    top: -5px;
+}
+.menu-btn{
+    display: none;
+}
+
+
+@media(min-width: 850px){
+    .jeden li{
+        float: left;
+    }
+
+    .navtop{
+        
+        clear: none;
+        max-height: none;
+        display: block;
+
+    }
+    .menu-icon{
+        display: none;
+    }
+}

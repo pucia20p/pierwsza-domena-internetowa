@@ -1,0 +1,38 @@
+#powrotglowna{
+    font-size: 30px;
+}
+.menu2{
+	font-family: lato;
+	font-size: 16px;
+	color: #13fc03;
+	text-align: center;
+}
+.dwa ul{
+	list-style-type: none;
+}
+
+.dwa a{
+	color: #0324fc;
+	text-decoration: none;
+	display: block;
+}
+.dwa li:hover a{
+	color: #FFFF00;
+}
+.dwa li{
+	width: 200px;
+	height: 20px;
+	background-color: #a232a8;
+	border-top: 1px solid #5b545c;
+}
+.dwa li:hover{
+	background-color: #47104a;
+}
+.dwa ul{
+	display: none;
+}
+.dwa li:hover ul{
+	display: block;
+	margin-left: 160px;
+	margin-top: -20px;
+}

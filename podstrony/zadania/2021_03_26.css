@@ -1,0 +1,112 @@
+#powrotglowna{
+    font-size: 30px;
+}
+
+body {
+
+
+
+background: linear-gradient(90deg, gray 50%, darkgray 0);
+/* background-size: 30px 100%;*/
+}
+
+
+
+h2{
+/* position: absolute;*/
+top: 20px;
+font-size: 44px;
+width: 100%;
+text-align: center;
+color: rgba(255, 255, 255, 0.6);
+text-transform: uppercase;
+text-shadow: 1px 1px 3px gray, 0 0 16px black;
+}
+
+
+
+section {
+width: 800px;
+background: red;
+
+margin: 12% auto 15%;
+
+
+
+border: 2px solid black;
+box-shadow: 0 0 11px 4px black;
+}
+
+
+
+h3 {
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+
+
+p {
+font-size: 14px;
+color: orangered;
+}
+
+
+
+section div {
+background-color: white;
+height:600px;
+margin: auto;
+}
+
+#s1 div{
+	text-align: center;
+}
+
+#s1 div img{
+	margin: 0 auto;
+}
+
+#s1 div div{
+	margin: 0 auto;
+
+	width: 240px;
+	height: 240px;
+	background-color: brown;
+}
+
+#s3 div p{
+	font-size: 40px;
+	font-family: sans-serif;
+	text-align: 
+}
+
+#s4 div{
+	position: relative;
+}
+
+#s5 img{
+	position: absolute;
+	top: calc(50% - 201px/2);
+	left: calc(50% - 170px/2);
+}
+
+#s6 div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#s7 div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#s8 div{
+	display: flex;
+}

@@ -1,0 +1,20 @@
+.txt a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+.txt img:hover{
+    border-color: #fff;
+    opacity: 80%
+}
+.txt img{
+	border: 1px solid #A12913;
+}
+.txt .tlo{
+	max-width: 70%;
+}
+.txt .glowa{
+	max-width: 20%;
+}
+.txt .plakat{
+	max-width: 60%;
+}

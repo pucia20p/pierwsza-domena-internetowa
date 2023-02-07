@@ -1,0 +1,45 @@
+#powrotglowna{
+    font-size: 30px;
+    background: white;
+}
+body{
+			background: black;
+			color: white;
+			border: 2px solid white;
+		}
+		html{
+			border: 2px solid green;
+		}
+		a{
+			background: blue;
+			height: 30px;
+			width: 100px;
+		}
+		a:hover{
+			background: #04ff00;
+		}
+		p{
+			background: yellow;
+			color: black;
+		}
+		.container{
+			display: flex;
+		}
+		.box{
+			width: 20%;
+			height: 100px;
+			display: inline-block;
+
+		}
+		.niebieski{
+			background: blue;
+		}
+		.czerwony{
+			background: red;
+		}
+		.zielony{
+			background: lightgreen;
+		}
+		.zolty{
+			background: yellow;
+		}

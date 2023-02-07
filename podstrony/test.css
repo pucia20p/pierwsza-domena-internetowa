@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Comic Sans MS;
+}
+nav{
+	/*text-align: center;*/
+	display: flex;
+	justify-content: center;
+	border: 1px solid #f00;
+}
+nav .menu li{
+	display: inline-block;
+	border: 1px solid #00f;
+}
+nav li a{
+	text-decoration: none;
+}
+nav .menu li a:hover{
+	color: #0f0;
+}
+.przyciski{
+	text-align: center;
+}
+.przyciski div{
+	margin: 20px;
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	background-color: #9f9;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 10px;
+	box-shadow: 10;
+}
+.przyciski div:hover{
+	transform: scale(1.5);
+}
+
+footer{
+	bottom: 0;
+	
+}
